@@ -1,11 +1,11 @@
 # ColorGuessGame
 This application is Developed using java in Android studio with minimum SDK or API level 24 (Nougat).
 
-#Dependency
+##Dependency
 * gson
 * material design
 
-#About
+##About
 
 Instagram: https://www.instagram.com/yuvrajyadav9448/
 
