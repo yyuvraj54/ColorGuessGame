@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/backimge"
+    android:paddingHorizontal="10dp"
+    tools:context=".ThirdScreen">
+
+
+    <TextView
+        android:id="@+id/textViewref"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:textColor="@color/black"
+        android:fontFamily="@font/bungee"
+        android:textSize="30sp"
+        android:text="Color Guess Game" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:text="Your turn now, Tap the color according to order you just seen in previous window." />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_marginVertical="10dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/red"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_weight="1"
+                android:fontFamily="@font/bungee"
+                android:backgroundTint="#FF4136"
+                android:text="-" />
+
+            <Button
+                android:id="@+id/green"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_weight="1"
+                android:fontFamily="@font/bungee"
+                android:layout_marginHorizontal="10dp"
+                android:backgroundTint="#2ECC40"
+                android:text="-" />
+            <Button
+                android:id="@+id/blue"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:fontFamily="@font/bungee"
+                android:layout_weight="1"
+                android:backgroundTint="#0074D9"
+                android:text="-" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/yellow"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_weight="1"
+                android:fontFamily="@font/bungee"
+                android:backgroundTint="#FFDC00"
+                android:text="-" />
+
+            <Button
+                android:id="@+id/purple"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_weight="1"
+                android:fontFamily="@font/bungee"
+                android:layout_marginHorizontal="10dp"
+                android:backgroundTint="#B10DC9"
+                android:text="-" />
+            <Button
+                android:id="@+id/orange"
+                android:layout_width="100dp"
+                android:fontFamily="@font/bungee"
+                android:layout_height="100dp"
+                android:layout_weight="1"
+                android:backgroundTint="#FF851B"
+                android:text="-" />
+
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/Gray"
+            android:layout_width="120dp"
+            android:layout_height="100dp"
+            android:backgroundTint="#AAAAAA"
+            android:fontFamily="@font/bungee"
+            android:text="-" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/errorCheck"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center_horizontal"
+        android:layout_margin="10dp"
+        android:text="" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center_horizontal"
+        android:showDividers="middle"
+        android:divider="@drawable/divider"
+        android:layout_marginVertical="20dp"
+        android:padding="5dp"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/clear"
+            app:backgroundTint="@null"
+            android:background="@drawable/resetbtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableRight="@android:drawable/ic_popup_sync"
+            android:text="Reset Answer" />
+
+        <Button
+            android:id="@+id/submit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/submitbtn"
+            android:drawableRight="@drawable/baseline_check_24"
+            android:text="Submit"
+            app:backgroundTint="@null" />
+
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/playAgain"
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        app:backgroundTint="@null"
+        android:background="@drawable/play_again_button"
+        android:layout_height="wrap_content"
+        android:text="Play Again" />
+
+</LinearLayout>
